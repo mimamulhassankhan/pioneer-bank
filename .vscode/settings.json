@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7a70a938-62dd-4719-bac2-6069455cf29e/resourceGroups/appsvc_windows_centralus2/providers/Microsoft.Web/sites/pioneerBank",
+    "appService.deploySubpath": "."
+}

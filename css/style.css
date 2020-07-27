@@ -1,0 +1,33 @@
+body {
+    padding: 10%;
+}
+
+.submit_area {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 3%;
+}
+
+.area1 {
+    background-color: blueviolet;
+}
+
+.area2 {
+    background-color: tomato;
+}
+
+.area3 {
+    background-color: goldenrod;
+}
+
+.area_title {
+    font-size: 25px;
+}
+
+.dollar {
+    font-size: 65px;
+}
+
+#transaction_area {
+    display: none;
+}

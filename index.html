@@ -5,10 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pioneer Bank Ltd.</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div id="login_area">
+        <h1 class="text-center">Welcome to Pioneer Bank Ltd.</h1>
+        <div class="submit_area mt-5">
+            <h4>Login</h4>
+            <div class="form mt-3">
+                <input type="text" placeholder="Email" class="form-control"><br>
+                <input type="password" placeholder="Password" class="form-control"> <br>
+                <button class="btn btn-success" id="btn_login">Enter</button>
+            </div>
 
+
+        </div>
+    </div>
+    <div id="transaction_area">
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-4">
+                <div class="area1 status  pl-3 pt-4 pb-4 rounded">
+                    <h5 class="area_title">Deposit</h5>
+                    <h1 id="dptxt" class="dollar">$ 00</h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="area2 status  pl-3 pt-4 pb-4 rounded">
+                    <h5 class="area_title">Withdraw</h5>
+                    <h1 id="wdtxt" class="dollar">$ 00</h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="area3 status  pl-3 pt-4 pb-4 rounded">
+                    <h5 class="area_title">Balance</h5>
+                    <h1 id="bltxt" class="dollar">$ 00</h1>
+                </div>
+            </div>
+        </div>
+        <div id="cash_flow" class="mt-5">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-6">
+                    <div class="cash_flow_area_1 rounded shadow p-3">
+                        <h4 class="area_title">Deposit</h4>
+                        <input id="dpinpt" type="number" name="" onkeyup="stoppedTyping(this)" placeholder="$ Amount you want to deposit" id="" class="form-control"><br>
+                        <button id="dpbtn" class="btn btn-success" disabled>Deposit</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="cash_flow_area_2 rounded shadow p-3">
+                        <h4 class="area_title">Withdraw</h4>
+                        <input id="wdinpt" min="10" type="number" onkeyup="stoppedTyping(this)" placeholder="$ Amount you want to withdraw" name="" id="" class="form-control"><br>
+                        <button id="wdbtn" class="btn btn-success" disabled>Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
